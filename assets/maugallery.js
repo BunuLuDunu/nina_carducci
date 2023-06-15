@@ -150,6 +150,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
+          /* Ajout d'un -1 à l'index */
           index = i - 1;
         }
       });
@@ -189,6 +190,7 @@
 
       $(imagesCollection).each(function(i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
+          /* Ajout d'un +1 à l'index */
           index = i + 1;
         }
       });
@@ -240,6 +242,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
+      /* Ajout de la bonne classe CSS */
       $(this).addClass("nav-link active active-tag");
 
       var tag = $(this).data("images-toggle");

@@ -1,35 +1,45 @@
 <!DOCTYPE html>
+<!-- Ajout d'un attribut lang pour l'accessibilité -->
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Ajout de balises meta "description" pour le navigateur -->
 	<meta name="description" content="Porfolio de la photographe Nina Carducci">
 
+	<!-- Ajout d'une balise title pour l'accessibilité et le SEO -->
 	<title>Nina Carducci - Photographe</title>
+	<!-- Utilisation des fichiers bootstrap & jquery minisés pour éliminer les ressources bloquant le rendu -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+	<!-- Ajout des attributs "defer" sur les scripts pour différer l'exécution des scripts à la fin du chargement du document -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
 </head>
 <body>
+<!-- Utilisation de la balise <header> pour la structure du site -->
 <header class="top-header">
+	<!-- Utilisation d'un élement h1 unique pour le titre du site -->
 	<h1 class="name">Nina Carducci</h1>
+	<!-- Utilisation d'un élément nav pour la structure du site -->
 	<nav class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
+			<!-- Ajout d'un attribut "aria-label" sur le lien vers Instagram & d'un attribut alt sur l'icon pour l'accessibilité -->
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" aria-label="Lien vers le compte Instragram de la photographe"><img src="assets/images/instagram.png" alt="Logo Instagram" width="20" height="20"></a></li>
 		</ul>
 	</nav>
 </header>
+<!-- Utilisation de la balise <main> pour la structure du site -->
 <main>
 	<div id="header">
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -40,6 +50,7 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
+					<!-- Ajout d'un attribut "alt" sur toutes les images du slider pour l'accessibilité -->
 					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Homme traversant un passage piéton en costume et portant un sac en cuir" width="1903" height="880">
 				</div>
 				<div class="carousel-item">
@@ -59,21 +70,26 @@
 			</button>
 		</div>
 	</div>
+	<!-- Utilisation des balises section pour la structure du site -->
 	<section id="about">
 		<div class="picture left">
 			<img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci" width="554" height="554">
 		</div>
 		<div id="about-me">
+			<!-- Utilisation de l'élément h2 pour l'imbrication des titres sans sauter de niveaux -->
 			<h2 class="about-me__title">A propos de moi</h2>
+			<!-- Utilisation d'une balise em pour mettre l'emphase sur la partie importante de l'introduction -->
 			<em class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</em>
 			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 		</div>
 	</section>
 	<section id="gallery">
+		<!-- Utilisation de l'élément h2 au lieu de h3 pour la structure de la page -->
 		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
+				<!-- Ajout d'attributs "alt" pour l'accessibilité, ajout de l'attribut "lazy-loading" pour charger les ressources en différé et reduire le temps de chargement -->
 				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" loading="lazy" alt="Plafond salle de concert aux lumières rouges et mains levées du public">
 				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" loading="lazy" alt="Homme en costume croisant les bras">
 				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" loading="lazy" alt="Femme rigolant dans un bureau">
@@ -88,6 +104,7 @@
 		<div class="quote">
 			<figure>
 				<blockquote>
+					<!-- Utilisation de la balise p au lieu d'un titre et changer la taille de police en CSS -->
 					<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
@@ -95,6 +112,7 @@
 		</div>
 	</section>
 	<section id="services">
+		<!-- Utilisation de l'élément h2 pour la structure de la page -->
 		<h2 class="title">Mes services</h2>
 		<div class="container">
 			<div class="service">
@@ -142,9 +160,11 @@
 <footer id="contact">
 	<div class="container">
 		<div class="form-container">
-			<h3>Une question ? Une demande de devis ?</h3>
+			<!-- Utilisation de l'élement h2 au lieu de h3 pour garder une hierarchie ordonnée & ajout d'une classe pour changer la police en CSS -->
+			<h2 class="form-title">Une question ? Une demande de devis ?</h2>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="#" method="post">
+				<!-- Ajout des labellés correspondants aux champs du formulaire pour l'accessibilité -->
 				<label for="nom">Nom</label>
 				<input type="text" name="nom" id="nom">
 				<label for="email">Email</label>
@@ -155,6 +175,7 @@
 			</form>
 		</div>
 		<div class="picture right">
+			<!-- Ajout de l'attribut "alt" pour l'accessibilité et de l'attribut "lazy-loading" pour réduire le chargement de la page-->
 			<img src="./assets/images/camera.webp" loading="lazy" alt="Appareil photo argentique" width="418" height="418">
 		</div>
 	</div>

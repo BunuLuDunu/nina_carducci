@@ -216,8 +216,13 @@ body {
 }
 .form-container {
 	flex : 2;
-
 }
+
+/* Ajout d'un changement de font-size correspondant au changement de h3 vers h2 en HTML*/
+.form-title {
+	font-size: 28px;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
