@@ -5,10 +5,48 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--Ajout de balises meta "description" pour le navigateur -->
-	<meta name="description" content="Porfolio de la photographe Nina Carducci">
+	<meta name="description" content="Portfolio de la photographe Nina Carducci">
 
 	<!-- Ajout d'une balise title pour l'accessibilité et le SEO -->
 	<title>Nina Carducci - Photographe</title>
+	<!-- Ajout des balises meta pour les réseaux sociaux -->
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Nina Carducci - Photographe"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://bunuludunu.github.io/nina_carducci/"/>
+	<meta property="og:image" content="https://ibb.co/dmsQjWr"/>
+	<meta property="og:description" content="Portfolio de la photographe Nina Carducci"/>
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary">
+
+	<!-- Schema.org markup for Google+ -->
+	<meta itemprop="name" content="Nina Carducci - Photographe">
+	<meta itemprop="description" content="Portfolio de la photographe Nina Carducci">
+	<meta itemprop="image" content="https://ibb.co/dmsQjWr">
+
+	<!-- Mise en place du référencement local via Schema.org -->
+	<script type="application/ld+json" defer>
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Person",
+		  "address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Bordeaux",
+			"addressRegion": "Gironde",
+			"postalCode": "33200",
+			"streetAddress": "68 avenue Alsace-Lorraine"
+		  },
+		  "image": "https://ibb.co/dmsQjWr",
+		  "jobTitle": "Photographe",
+		  "name": "Nina Carducci",
+		  "telephone": "05 56 67 78 89",
+		  "openingHours": "Mo,Tu,We,Th,Fr, 10:00-19:00",
+		  "url": "https://bunuludunu.github.io/nina_carducci/"
+		}
+		</script>
+
 	<!-- Utilisation des fichiers bootstrap & jquery minisés pour éliminer les ressources bloquant le rendu -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
