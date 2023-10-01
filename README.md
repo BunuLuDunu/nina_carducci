@@ -15,7 +15,7 @@ Mon quatrième projet (après un troisième sur la gestion de projets) est le si
 
 ## 🛠️ Installation  
 ```bash
-git clone https://github.com/BunuLuDunu/archiwebos.git
+git clone https://github.com/BunuLuDunu/nina_carducci.git
 npm install
 ```
 
